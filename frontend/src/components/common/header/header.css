@@ -1,0 +1,47 @@
+.header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-item {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-menu-item:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.disabled-link {
+  pointer-events: none;
+  color: #6c757d;
+}
+
+
+.dropdown-toggle {
+  margin-left: 20px;
+}
