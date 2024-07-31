@@ -54,7 +54,7 @@ function Footer() {
                 <Form.Label>Email address</Form.Label>
                 <FormControl type="email" placeholder="Enter email" />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button variant="primary my-2" type="submit">
                 Subscribe
               </Button>
             </Form>
