@@ -63,7 +63,7 @@ function Home() {
         
         <Row className="benefits-section">
           <Col md={12}>
-            <h2>Why Use Coupon Wallet?</h2>
+            <h3 className='text-center py-3 '>Why to use coupon wellet ?</h3>
             <Row>
               <Col md={4}>
                 <div className="benefit-item">
