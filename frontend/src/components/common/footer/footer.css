@@ -1,57 +1,60 @@
 .footer {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-  border-top: 1px solid #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
 }
 
-.footer-row {
-  margin-bottom: 20px;
+.footer h4, .footer h5 {
+  color: #f8f9fa;
 }
 
-.footer-column h4 {
-  margin-bottom: 15px;
-  font-weight: bold;
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
 }
 
-.footer-column p {
-  margin-bottom: 10px;
-}
-
-.footer-column .nav-link {
-  color: #007bff;
-  margin-bottom: 5px;
-  transition: color 0.3s;
-}
-
-.footer-column .nav-link:hover {
-  color: #0056b3;
+.footer a:hover {
+  color: #ffc107;
   text-decoration: underline;
 }
 
-.footer-column .social-links .nav-link {
+.footer .footer-column {
+  margin-bottom: 20px;
+}
+
+.footer .social-links .nav-link {
   display: inline-block;
   margin-right: 10px;
+  padding: 0;
 }
 
-.footer-column form {
-  margin-top: 10px;
+.footer .social-links .nav-link:hover {
+  color: #ffc107;
 }
 
-.footer-column form .form-label {
-  font-weight: bold;
+.footer .form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ccc;
+  color: #fff;
 }
 
-.footer-column form .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+.footer .form-control::placeholder {
+  color: #ddd;
 }
 
-.footer-column form .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+.footer .btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
 }
 
-.footer .text-center p {
-  margin: 0;
-  color: #6c757d;
+.footer .btn-primary:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: #000;
+}
+
+.footer .text-center {
+  margin-top: 20px;
 }
