@@ -17,49 +17,24 @@ function Home() {
           </Col>
         </Row>
         
-        <Row className="featured-coupons-section">
-          <Col md={12}>
-            <h2>Featured Coupons</h2>
-            <Row>
-              <Col md={3}>
-                <Card className="coupon-card">
-                  <Card.Body>
-                    <Card.Title>10% Off on Electronics</Card.Title>
-                    <Card.Text>Valid until: 31st Dec 2024</Card.Text>
-                    <Button variant="success" as={Link} to="/coupons/1">View Coupon</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card className="coupon-card">
-                  <Card.Body>
-                    <Card.Title>$5 Off on Groceries</Card.Title>
-                    <Card.Text>Valid until: 15th Nov 2024</Card.Text>
-                    <Button variant="success" as={Link} to="/coupons/2">View Coupon</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card className="coupon-card">
-                  <Card.Body>
-                    <Card.Title>Free Shipping on Orders Over $50</Card.Title>
-                    <Card.Text>Valid until: 1st Jan 2025</Card.Text>
-                    <Button variant="success" as={Link} to="/coupons/3">View Coupon</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={3}>
-                <Card className="coupon-card">
-                  <Card.Body>
-                    <Card.Title>10% Off on Electronics</Card.Title>
-                    <Card.Text>Valid until: 31st Dec 2024</Card.Text>
-                    <Button variant="success" as={Link} to="/coupons/1">View Coupon</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+        <Row>
+    {[
+      { title: '10% Off on Electronics', text: 'Valid until: 31st Dec 2024', link: '/coupons/1' },
+      { title: '$5 Off on Groceries', text: 'Valid until: 15th Nov 2024', link: '/coupons/2' },
+      { title: 'Free Shipping on Orders Over $50', text: 'Valid until: 1st Jan 2025', link: '/coupons/3' },
+      { title: '10% Off on Electronics', text: 'Valid until: 31st Dec 2024', link: '/coupons/1' }
+    ].map((coupon, index) => (
+      <Col md={6} lg={3} key={index} className="mb-4">
+        <Card className="coupon-card modern-card">
+          <Card.Body>
+            <Card.Title>{coupon.title}</Card.Title> 
+            <Card.Text>{coupon.text}</Card.Text>
+            <Button variant="success" as={Link} to={coupon.link} className="custom-button">View Coupon</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    ))}
+  </Row>
         
         <Row className="benefits-section">
           <Col md={12}>

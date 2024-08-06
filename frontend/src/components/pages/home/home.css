@@ -48,3 +48,65 @@
     margin-bottom: 10px;
   }
   
+  /* CouponCards.css */
+
+/* Modern Card Style */
+.modern-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Increased Card Size */
+.card-large {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  max-width: 350px;
+  margin: auto; /* Center the card */
+}
+
+/* Card Title Single Line */
+.card-title-single-line {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Card Text as Paragraph */
+.card-text-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Custom Button */
+.custom-button {
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  float: left;
+}
+/* 
+.custom-button:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+} */
+
+/* Ensure cards are responsive */
+@media (max-width: 768px) {
+  .modern-card {
+    margin-bottom: 20px;
+  }
+  .card-large {
+    height: auto; /* Adjust height for smaller screens */
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
