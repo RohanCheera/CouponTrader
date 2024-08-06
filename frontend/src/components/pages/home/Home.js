@@ -19,10 +19,10 @@ function Home() {
         
         <Row className="featured-coupons-section">
           <Col md={12}>
-            <h2>Featured Coupons</h2>
+            <h2 className='text-center py-3'>Featured Coupons</h2>
             <Row>
               <Col md={3}>
-                <Card className="coupon-card">
+                <Card className="coupon-card ">
                   <Card.Body>
                     <Card.Title>10% Off on Electronics</Card.Title>
                     <Card.Text>Valid until: 31st Dec 2024</Card.Text>
