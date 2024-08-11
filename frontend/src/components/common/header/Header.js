@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header-container">
+      <div className="header-container px-5 py-2">
         <Link to="/" className="app-title">
           Coupon Wallet
         </Link>
