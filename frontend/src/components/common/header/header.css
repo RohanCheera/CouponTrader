@@ -18,6 +18,11 @@
   color: #007bff;
   text-decoration: none;
   letter-spacing: 0.01rem;
+  transition: color 2sec;
+}
+.app-title:hover{
+  color:black;
+  letter-spacing: 0.04rem;
 }
 
 .menu-bar {
