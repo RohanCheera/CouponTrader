@@ -35,8 +35,8 @@
 }
 
 .main-menu-item:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #0062cb;
+  text-decoration: 2px underline;
 }
 
 .disabled-link {
